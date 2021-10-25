@@ -126,6 +126,17 @@
         "hungry"
       ],
       "id": "12"
+    },
+    {
+      "name": "Penny",
+      "species": "puppy",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving",
+        "goofy"
+      ],
+      "id": "13"
     }
   ]
 }
