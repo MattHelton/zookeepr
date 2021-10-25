@@ -1,5 +1,6 @@
 const express = require('express');
-const {animals} = require('../data/animals')
+const {filterByQuery, findById, createNewAnimal, validateAnimal} = require("../../lib/animals")
+const {animals} = require('../../data/animals')
 
 
 const router = express.Router()

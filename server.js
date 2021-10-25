@@ -3,9 +3,9 @@ const express = require("express");
 // reauires data from json file
 const { animals } = require("./data/animals")
 //imports html routes
-const htmlRoutes = require('./routes/htmlRoutes.js')
+const htmlRoutes = require('./routes/htmlRoutes')
 //imports api routes
-const apiRoutes = require('./routes/apiRoutes.js')
+const apiRoutes = require('./routes/apiRoutes/')
 
 const PORT =  process.env.PORT || 3001
 

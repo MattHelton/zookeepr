@@ -137,6 +137,17 @@
         "goofy"
       ],
       "id": "13"
+    },
+    {
+      "name": "Freyja",
+      "species": "bear",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "loving",
+        "goofy"
+      ],
+      "id": "14"
     }
   ]
 }
