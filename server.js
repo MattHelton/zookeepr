@@ -7,6 +7,7 @@ const htmlRoutes = require('./routes/htmlRoutes.js')
 //imports api routes
 const apiRoutes = require('./routes/apiRoutes.js')
 
+const PORT =  process.env.PORT || 3001
 
 // instantiates the server
 const app = express();
@@ -18,5 +19,5 @@ app.use('/', htmlRoutes)
 app.use('/api/', apiRoutes)
 // makes the server listen
 app.listen(3001, () =>{
-  console.log("API server now running on port 300!1");
+  console.log("API server now running on PORT: ", PORT);
 });
