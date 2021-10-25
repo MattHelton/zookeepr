@@ -30,6 +30,10 @@ filterByQuery = (query, animalsArray) => {
   return filteredResults;
 };
 
+findById = (id, animalsArray) => {
+    const result = animalsArray.filter(animal => animal.id === id)[0];
+    return result
+}
 router.get('/animals', (req, res) =>{
     let results = animals
     console.log(req.query)
@@ -37,6 +41,15 @@ router.get('/animals', (req, res) =>{
         results = filterByQuery(req.query, results);
     }
     res.json(results);
+});
+
+router.get('/animals/:id', (req, res)  =>{
+    const result = findById(req.params.id, animals);
+    if(result) {
+        res.json(result);
+    } else {
+        res.send(404);
+    }
 });
 
 
