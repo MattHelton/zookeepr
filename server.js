@@ -18,6 +18,6 @@ app.use('/', htmlRoutes)
 // sets apiRoutes
 app.use('/api/', apiRoutes)
 // makes the server listen
-app.listen(3001, () =>{
+app.listen(PORT, () =>{
   console.log("API server now running on PORT: ", PORT);
 });
