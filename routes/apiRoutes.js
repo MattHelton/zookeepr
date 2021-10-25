@@ -44,13 +44,18 @@ router.get('/animals', (req, res) =>{
 });
 
 router.get('/animals/:id', (req, res)  =>{
-    const result = findById(req.params.id, animals);
+    let result = findById(req.params.id, animals);
     if(result) {
         res.json(result);
     } else {
         res.send(404);
     }
 });
+
+router.post('/animals', (req, res) => {
+  console.log(req.body);
+  res.json(req.body)
+})
 
 
 
