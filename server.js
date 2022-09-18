@@ -5,7 +5,7 @@ const { animals } = require("./data/animals")
 //imports html routes
 const htmlRoutes = require('./routes/htmlRoutes')
 //imports api routes
-const apiRoutes = require('./Routes/apiRoutes/')
+const apiRoutes = require('./routes/apiRoutes/')
 
 const PORT =  process.env.PORT || 3001
 
